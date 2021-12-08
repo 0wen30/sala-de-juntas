@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="icofont/icofont.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+    <div id="modal_back" class="centrar__flex">
+        <div id="modal">
+            <i id="close__modal" class="icofont-close-squared-alt"></i>
+            <div class="modal-texto">
+                <label for="nombre">Nombre:</label>
+                <input class="modal-input__texto" type="text" name="nombre" id="nombre">
+            </div>
+            <div class="modal-texto">
+                <label class="modal-label__texto" for="evento">Titulo del evento:</label>
+                <input class="modal-input__texto" type="text" name="evento" id="evento">
+            </div>
+            <div class="modal-horas">
+                <div>
+                    <label class="modal-label__number" for="inicio">Hora Inicial:</label>
+                    <input class="modal-input__number" type="number" min="7" max="10" name="inicio" id="inicio">
+                </div>
+                <div>
+                    <label class="modal-label__number" for="fin">Hora Final:</label>
+                    <input class="modal-input__number" type="number" min="8" max="11" name="fin" id="fin">
+                </div>
+            </div>
+            <a href="#" id="agendar" class="myButton centrar__flex">Agendar</a>
+        </div>
+    </div>
+    <main>
+        <div id="nuevo" class="tarjeta centrar__flex"><i class="icofont-plus-circle"></i></div>
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
